@@ -40,7 +40,7 @@ async function hariKerja(){
 hariKerja()
 */
 
-/*program akan memanggil async function. Pada bagian try, dengan menggunakan keyword await,
+/*program akan menjalankan async function. Pada bagian try, dengan menggunakan keyword await,
 program diminta untuk menunggu sampai promise selesai dijalankan lalu mereturn hasil ke dalam
 variabel hasil. Jika ada error, program akan menghentikan kode di bagian try dan menjalankan kode
 error di bagian catch
