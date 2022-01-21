@@ -1,3 +1,4 @@
+//Program menghitung volume balok
 const sisiBalok = [12, 10, 3]
 
 const volumeBalok = (sisi) =>{

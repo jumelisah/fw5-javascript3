@@ -1,3 +1,4 @@
+//Program timer
 const waktuMundur = (sisa)=>{
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
