@@ -11,7 +11,7 @@ const getMonth = (callback) => {
 }
 
 function bulan(stat, arrMonth){
-    if(true){
+    if(stat==null){
         const namaBulan = arrMonth.map(x => "Bulan "+x);
         console.log(namaBulan)
     }else{
