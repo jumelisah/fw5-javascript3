@@ -2,10 +2,14 @@
 const waktuMundur = (sisa)=>{
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            if(sisa>0){
-                resolve(`${sisa} detik`)
+            if(typeof sisa=="number"){
+                if(sisa>0){
+                    resolve(`${sisa} detik`)
+                }else{
+                    reject("Waktu habis")
+                }
             }else{
-                resolve("Waktu habis")
+                reject("Data bukan number")
             }
         }, 1000)
     })
@@ -13,11 +17,10 @@ const waktuMundur = (sisa)=>{
 
 async function sisaWaktu(times){
     try{
-        while(times>=0){
-            const results = await waktuMundur(times)
-            console.log(results)
-            times--
-        }
+        const results = await waktuMundur(times)
+        console.log(results)
+        times--
+        sisaWaktu(times)
     }catch(err){
         console.log(err)
     }
