@@ -16,6 +16,6 @@
   "author": "Jumelisah",
   "license": "ISC",
   "dependencies": {
-    "cross-fetch": "^3.1.4"
+    "cross-fetch": "^3.1.5"
   }
 }
