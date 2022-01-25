@@ -1,8 +1,8 @@
 const fetch = require('cross-fetch')
 
-const url = "https://jsonplaceholder.typicode.com/users"
+const url = "https://jsonplaceholder.typicode.com/user"
 
-/*then catch
+//then catch
 
 fetch(url).then(res => {
     res.json().then(data => {
@@ -10,11 +10,11 @@ fetch(url).then(res => {
             console.log(element.name)
         })
     }).catch(err => {
-        console.log("Error 2")
+        console.log("Periksa kembali URL!")
     })
 }).catch(err => {
-  console.log("Error 1");
-})*/
+  console.log("Only absolute URLs are supported");
+})
 
 
 //try catch
@@ -26,7 +26,7 @@ let listOfNames = async () =>{
             console.log(element.name)
         })
     }catch(err){
-        console.log("error")
+        console.log(err)
     }
 }
 
